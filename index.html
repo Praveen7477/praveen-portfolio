@@ -845,8 +845,8 @@ nav.scrolled{
   .hero-left{order:2;padding:0 0 2.5rem;}
   .hero-right{
     order:1;
-    height:85vw;
-    max-height:460px;
+    height:74vw;
+    max-height:400px;
     margin-bottom:1rem;
   }
   /* hide the distracting planet rings on mobile */
@@ -1363,8 +1363,8 @@ nav.scrolled{
 </section>
 
 <footer>
-  <span class="ft">© 2026 Praveen Pandarinathan</span>
   <span class="ft">Available Sep 2026 · Open to relocation</span>
+   <span class="ft" style="color:var(--accent);">Built by Praveen ★</span>
 </footer>
 
 <script>
@@ -1459,6 +1459,7 @@ function setRendererSize(){
   const w = robotContainer.clientWidth || 480;
   const h = robotContainer.clientHeight || 700;
   renderer.setSize(w, h);
+  renderer.setPixelRatio(window.devicePixelRatio);
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
 }
