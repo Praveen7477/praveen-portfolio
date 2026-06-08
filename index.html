@@ -975,8 +975,8 @@ nav.scrolled{
   .hero-left{order:2;padding:0 0 2.5rem;}
   .hero-right{
     order:1;
-    height:68vw;
-    max-height:380px;
+    height:74vw;
+    max-height:420px;
     margin-bottom:1rem;
   }
   /* hide the distracting planet rings on mobile */
@@ -1832,6 +1832,7 @@ if(skillsCanvas){
         skillsSize,
         skillsSize
     );
+    skillsRenderer.setPixelRatio(window.devicePixelRatio);
 
     skillsRenderer.setPixelRatio(
         window.devicePixelRatio
