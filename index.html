@@ -1702,6 +1702,7 @@ function setRendererSize(){
   const w = robotContainer.clientWidth || 480;
   const h = robotContainer.clientHeight || 700;
   renderer.setSize(w, h);
+  renderer.setPixelRatio(window.devicePixelRatio); 
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
 }
